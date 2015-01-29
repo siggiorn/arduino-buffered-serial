@@ -48,7 +48,7 @@ BufferedSerial::BufferedSerial(unsigned int in_buf_size, unsigned int out_buf_si
 	handlePacketFunction = 0;
 }
 
-void BufferedSerial::init(int serial_port, int baud_rate){
+void BufferedSerial::init(int serial_port, long baud_rate){
 	_serial_port = serial_port;
 
 	if( serial_port == 0)
