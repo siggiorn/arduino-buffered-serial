@@ -51,7 +51,7 @@ class BufferedSerial
 {
 public:
 	BufferedSerial(unsigned int in_buf_size, unsigned int out_buf_size);
-	void init(int serial_port, int baud_rate);
+	void init(int serial_port, long baud_rate);
 	void setPacketHandler(void (*rx_func)(ByteBuffer*));
 
 	void update();
